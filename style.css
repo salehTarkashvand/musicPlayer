@@ -19,7 +19,7 @@ body{
 
 }
 
-#misic-cove{
+#music-cover{
     display: block;
     width: 100%;
     border-radius: 50%;
@@ -53,10 +53,54 @@ body{
     border-radius: 50%;
     background-color: white;
 }
+.btns{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
  .icon  {
-    font-size: 3em ;
-    margin: 0px 30px;
-    color: white;
+    font-size: 20px ;
+
+    background-color: white;
     cursor: pointer;
 
  }
+ .play {
+    background-image:url("img/play-circle-fill.svg");
+    margin: 20px 20px;
+    padding: 20px 20px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+ }
+ .next {
+    background-image:url("img/caret-right-fill.svg");
+    margin: 20px 20px;
+    padding: 20px 20px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+ }
+ .before {
+    background-image:url("img/caret-left-fill.svg");
+    margin: 20px 20px;
+    padding: 20px 20px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+ }
+ .pause {
+    background-image:url("img/pause-circle-fill.svg");
+    margin: 20px 20px;
+    padding: 20px 20px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+ }
+
+ 
+ 
