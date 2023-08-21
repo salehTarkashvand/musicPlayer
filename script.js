@@ -28,7 +28,7 @@ let musicTime = document.querySelector("#music-time")
 let playBtn = document.querySelector("#play-btn")
 let preBtn = document.querySelector("#pre-btn")
 let nextBtn = document.querySelector("#next-btn")
-let icon = document.querySelector("#icon")
+let icon = playBtn.querySelector("#icon")
 let play = document.querySelector(".play")
 
 
@@ -79,13 +79,14 @@ playBtn.addEventListener("click",(e)=>{
 
         audio.play()
         musicCover.style.animationPlayState ="running"
-        icon.className = "fa-pause icon fas"
-        play.className = "pause"
+        icon.className = "icon uil uil-pause"
+       
     }else{
     
         audio.pause()
         musicCover.style.animationPlayState ="paused"
-        play.className= "play"
+        icon.className = "icon uil uil-play"
+       
     
     }    
 })
