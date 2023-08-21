@@ -2,6 +2,14 @@
 
 const musics = [
     {
+        name : "R.I.P. SCREW" ,
+
+        cover : "covers/5109df95c15114aee5f18b36824d1f60.jpg",
+        audio : new Audio("musics/R.I.P. SCREW.mp3")
+
+    }
+    ,
+    {
         name : "tarik tarin" ,
 
         cover : "covers/tarik-tarin-cover.jpeg",
@@ -18,6 +26,7 @@ const musics = [
         audio : new Audio("musics/Inwood Hill Park.mp3")
 
     }
+    
 ]
 
 // select elements
