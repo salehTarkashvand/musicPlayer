@@ -4,13 +4,18 @@ const musics = [
     {
         name : "R.I.P. SCREW" ,
 
+        artist : "travis scott" ,
+
         cover : "covers/5109df95c15114aee5f18b36824d1f60.jpg",
+
         audio : new Audio("musics/R.I.P. SCREW.mp3")
 
     }
     ,
     {
         name : "tarik tarin" ,
+
+        artist : "dorcci" ,
 
         cover : "covers/tarik-tarin-cover.jpeg",
 
@@ -20,6 +25,8 @@ const musics = [
      ,
     {
         name : "Inwood Hill Park" ,
+
+        artist : "6luck" ,
 
         cover : "covers/6lack_4_photo-credit_jack-mckain22_custom-da791cd2ed8687a25733affc1e09ea79514d2034-s1100-c50.jpg",
 
@@ -32,6 +39,7 @@ const musics = [
 // select elements
 
 let musicName = document.querySelector("#music-name")
+let artistName = document.querySelector("#artist-name")
 let musicCover = document.querySelector("#music-cover")
 let musicTime = document.querySelector("#music-time")
 let playBtn = document.querySelector("#play-btn")
@@ -39,6 +47,9 @@ let preBtn = document.querySelector("#pre-btn")
 let nextBtn = document.querySelector("#next-btn")
 let icon = playBtn.querySelector("#icon")
 let play = document.querySelector(".play")
+let body = document.querySelector("body")
+let modeToggle = body.querySelector(".mode-toggle")
+ 
 
 
 // select musics
@@ -52,7 +63,11 @@ musicName.innerText = musics[currentmusic].name
 
 // ADD events
 
+// dark mode event
 
+modeToggle.addEventListener("click" , ()=>{
+    body.classList.toggle("dark")
+})
 
 
 // set max range audio *
@@ -130,5 +145,6 @@ function changeMusic (state){
     audio = musics[currentmusic].audio
     musicCover.src = musics[currentmusic].cover
     musicName.innerText = musics[currentmusic].name
+    artistName.innerText = musics[currentmusic].artist
 }
 
